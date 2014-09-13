@@ -1,0 +1,36 @@
+
+Project Requirements
+
+Controller
+	Android or iOS device
+	UI using touch screen
+
+	Functionality:
+		Search for media on server
+		Play
+		Pause
+		Stop
+		FF
+		Rewind
+
+Renderer
+	PC, Mac, or Laptop
+	Receives request from Controller
+	Opens local program necessary to play media on this device, cannot use any pre-integrated network functionality (like VLC has)
+	Requests content from server to play
+
+Server
+	Manage and provide media to the Renderer
+	Must be able to return search functionality to Controller
+
+These are just the base requirements from the document.  Anything above and beyond has, in the past, been used as extra credit.
+
+Basic Steps and Milestones
+
+	Creating sockets to successfully send/receive information between iOS/Android device, Renderer, and Server
+	Set up Server to handle search functionality and media storage
+		Easy to set up a MySQL server with media and location info, serve it out to other devices
+	Enable Renderer to start up programs on machine it resides on
+	Enable Renderer to control other programs on the machine it resides on (stop, start, open, play, etc).
+	Set up GUI on iOS/Android for easy navigation and search (virtual iPod style controls?)
+	
